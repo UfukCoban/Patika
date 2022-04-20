@@ -1,0 +1,78 @@
+/****************Layout**************/
+
+/*class -> . text-red*/
+/*ıd-> #id-bilgisi{}*/
+
+/* css selector*/
+
+
+ul>li:first-child {
+    color: green;
+
+}
+
+ul>li:last-child {
+    color: red;
+
+}
+
+li:nth-child(2) {
+    color: rgb(220, 201, 201);
+
+}
+
+li:nth-child(odd) {
+    color: rgb(34, 142, 214);
+
+}
+
+li:nth-child(even) {
+    background-color: rgb(34, 142, 214);
+
+}
+
+li:nth-child(2n-1) {
+    background-color: rgb(70, 214, 34);
+
+}
+
+
+.color-blue.fw-normal {
+    color:blue;
+    font-weight:normal;
+
+
+}
+
+
+/* h1,h2,h3,h4,h5,h6{
+    font-size: 20px;
+    color:rgb(26, 225, 209) */
+
+
+}
+
+.text-red {
+    color: red;
+}
+.text-blue {
+    color: blue;
+}
+
+p{
+    font-size: 12px
+}
+
+.fs-14{
+    font-size:  14px;
+    
+}
+    
+.fs-20{
+    font-size: 20px;
+    
+}
+.fs-30{
+    font-size: 30px
+    
+}

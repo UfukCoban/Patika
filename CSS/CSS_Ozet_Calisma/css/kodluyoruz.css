@@ -1,0 +1,98 @@
+/* .box {
+
+    width: 300px;
+    height:300px;
+    padding: 10px;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left
+} */
+
+.container{
+    width:1000px;
+    /* margin-left: auto;
+    margin-right: auto; */ 
+    margin:0 auto 0 auto;   
+    /* Bu iki yazım şeklinde aynıdır.KIsa yolu da var: */
+
+    margin: 0 auto; /* kısa yol*/
+    margin:50px auto 0;
+    padding-bottom: 20px;
+
+}
+
+.left-bar{
+    width: 200px;
+    float: left;
+
+
+}
+
+.content {
+    width: 1000px;
+    float: left;
+
+}
+
+.clear {
+    clear:both;
+}
+/* margin ne kadar yer kaplanıdığını görmek için yapıldı
+margin ve padding aynı şekilde çalışır.
+
+*/
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.clear {
+    clear:both;
+}
+
+.card {
+    width: 20%;
+    float: left;
+    padding: 5%;
+    margin-right: 3%; 
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.left-bar{
+    width: 200px;
+
+}
+.content{
+    width: 800px;
+}
+
+.container{
+    width:1000px;
+}
+
+
+.gradient{
+    background:linear-gradient(90deg,rgba(45,156,219,.6),rgba(155,81,224,.6));
+
+
+}
+.btn{
+    padding:10px 20px;
+    border-radius: 25px;
+    color:white;
+    text-decoration:none;
+    -webkit-box-shadow: 2px 2px 15px 7px rgba(0,0,0,0.3); 
+box-shadow: 2px 2px 15px 7px rgba(0,0,0,0.3);
+
+}

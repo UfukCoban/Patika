@@ -1,0 +1,2 @@
+# Display-zellikleri
+Display Özellikleri

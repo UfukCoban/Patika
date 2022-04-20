@@ -1,0 +1,267 @@
+<h1>Listeler</h1>
+<!-- Sıralı liste 1,2,3... "ol"
+    Sırasız liste *, + ,- ... "ul"-->
+<!-- liste öğesi  olması gerekiyor li=list item -->
+<ol>
+    <li>liste öğesi *1*</li>
+    <li>liste öğesi 2</li>
+    <li>liste öğesi 3</li>
+</ol>
+
+<ul>
+    <li>liste öğesi 1</li>
+    <li>liste öğesi 2</li>
+    <li>liste öğesi 3</li>
+</ul>
+
+
+<ol>
+    <li>liste öğesi 1</li>
+    <li>liste öğesi 2</li>
+    <li>diğer özellikler</li>
+        <ul>    
+            <li>liste öğesi 1</li>
+            <li>liste öğesi 2</li>
+            <li>liste öğesi 3</li>
+        </ul>
+</ol>
+
+<!-- roma rakamı ile ve alfabetik sıralama -->
+
+<ol type ="I">
+    <li>javascript</li>
+    <li>C#</li>
+    <li>php</li>
+</ol>
+<!-- Listeni başında daireyi silmek için kullanılır -->
+
+<ol style ="list-style-type:none">
+    <li>javascript</li>
+    <li>C#</li>
+    <li>php</li>
+</ol>
+<!--  Circle, square, disc gibi  karakterleri eklenebilir-->
+<ol style ="list-style-type:circle">
+    <li>javascript</li>
+    <li>C#</li>
+    <li>php</li>
+</ol>
+
+<ol style ="list-style-type:square">
+    <li>javascript</li>
+    <li>C#</li>
+    <li>php</li>
+</ol>
+
+<ol style ="list-style-type:disc">
+    <li>javascript</li>
+    <li>C#</li>
+    <li>php</li>
+</ol>
+
+
+<!-- Emmet ile daha hızlı HTML Yapıları Oluşturma
+    ! +Tab yapıdığınd aaşağıkdai bilgiyi otomatik olarak getirir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<h2>Emmet Zen Coding </h2>
+
+
+<!--Etiket isimlerini  direkt olarak verebiliyoruz.
+    +:kardes öge
+    >:içinde öğe
+    ^ yukarı çık ve öğe oluştur.
+    * çarpma işlemi p*3 3 defa oluştur demek
+    lorem ??? class oluşturmak için kullanılıyor.
+    lorem4
+    . class
+    # id
+-->
+<!-- h1+p+p+h2+p+p+p+p kardeş input olarak geçmektedir. -->
+
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<!-- h1+p+p+h2+p+p+p+p=h1+p*2+h2+p*4 -->
+
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p> 
+
+
+<!-- ul>li*5 -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!-- ul>li*3>p>h3>p Çok karmaşık bir yapı almış oldu.-->
+
+<ul>
+    <li>
+        <p>
+            <h3>
+                <p></p>
+            </h3>
+        </p>
+    </li>
+    <li>
+        <p>
+            <h3>
+                <p></p>
+            </h3>
+        </p>
+    </li>
+    <li>
+        <p>
+            <h3>
+                <p></p>
+            </h3>
+        </p>
+    </li>
+</ul>
+
+<!-- ul>li*3^p içinde içinde yapmak terkar yukarı çıkmak için ^ işareti kullanmamız gerekiyor .
+
+
+-->
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<!-- ul>li*3^p+h3 kardeş öğe kullanılmış oldu. -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<h3></h3>
+
+
+<!--lorem: Lorem nedir?:Latin harfleriyle hazırlanmış anlamsız karakterlerdir.
+
+
+-->
+<!-- p lorem
+
+lorem4 4 kelimelik lorem üret-->
+
+p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, minus beatae eveniet quae iusto id. Culpa, rerum minus! Eveniet perspiciatis quisquam est nemo natus repudiandae? Cumque consequuntur perferendis explicabo natus.
+<p>lorem</p>
+<!-- <p>lorem4</p> -->
+
+<p>Lorem ipsum dolor sit.</p>
+
+<!-- <ul>li*3>lorem1^p*2>lorem4+h3>lorem1 --hatalı kullanım-->
+<!-- <ul>li*3>lorem1^^p*2>lorem4>h3>lorem1 -->
+
+    <ul><li>Lorem.</li>
+    <li>Corrupti?</li>
+    <li>Excepturi.</li>
+    <p>
+        Lorem ipsum dolor sit.<h3>Lorem.</h3>
+    </p>
+    <p>
+        Suscipit quibusdam amet consequatur.<h3>Fugit?</h3>
+    </p>
+<!-- . class özelliği
+ -->
+<!-- 
+ h3.deneme>lorem1 -->
+ <h3 class="deneme">Lorem.</h3>
+
+ <!-- hem class hem de id olursa nasıl yapılır. -->
+ <!-- h3#ididolussun>Lorem1. -->
+ <h3 id="ididolussun">Lorem.</h3>
+ 
+ <!-- Birden falz classs eklemek istersen-->
+ <!-- h3.birinci-class.ikinci-class-->
+
+ <h3 class="birinci-class ikinci-class"></h3>
+
+ <!-- h3.kodluyoruz  -->
+<h3 class="kodluyoruz"></h3>
+
+<!-- .tepki -->
+<div class="tepki"></div>
+
+<!-- ul>.tepki -->
+<ul>
+    <li class="tepki"></li>
+
+
+</ul>
+<!-- ul.tepki -->
+<ul class="tepki"></ul>
+
+<!-- ul>.tepki-red*3 -->
+<ul>
+    <li class="tepki-red"></li>
+    <li class="tepki-red"></li>
+    <li class="tepki-red"></li>
+</ul>
+
+<!-- Otomatik artış sağlayan değerleri yazmak için :$ işareti kullanılır. -->
+
+<!-- ul#id1>li#id2 -->
+
+<ul id="id1">
+    <li id="id2"></li>
+</ul>
+<!-- 
+ul#id1>li#id2>li#id3 -->
+
+
+<ul id="id1">
+    <li id="id2">
+        <li id="id3"></li>
+    </li>
+</ul>
+
+<!-- ul>li#idNo$*3 -->
+<ul>
+    <li id="idNo1"></li>
+    <li id="idNo2"></li>
+    <li id="idNo3"></li>
+</ul>
+
+<!-- p{emmet ile tag içine text yazma} -->
+
+<p>emmet ile tag içine text yazma</p>
+
+<p class="lorem5"></p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!-- p>lorem5. -->
+<p>Lorem ipsum dolor sit amet.</p>
+
+

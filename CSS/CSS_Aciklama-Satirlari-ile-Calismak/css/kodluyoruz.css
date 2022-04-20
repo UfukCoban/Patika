@@ -1,0 +1,41 @@
+/* CSS açıklama  yıldız slash ile yapılır.*/
+
+h1{
+    color: brown;/* renk olarak brown kullanılmıştır*/
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color:green;
+    font-size: 15px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+h3{ 
+    color:blue;
+    font-size: 9px;
+    font-style: italic;
+    text-transform:initial;
+
+}
+/* 4 başlık tamamlanmıştır. şekşinde bilgi notu satırı eklenebilir.*/
+h4{ 
+    color:yellowgreen;
+    font-size: 18px;
+    font-style: italic;
+    text-transform:initial;
+}
+
+p{
+    color:black;
+    font-size: 15px;
+
+}
+
+/*****liste bölümü *****/
+li{
+    color:blueviolet
+
+
+}

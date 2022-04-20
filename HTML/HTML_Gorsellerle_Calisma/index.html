@@ -1,0 +1,99 @@
+<!-- 
+<img>: (The İmage Embed Element:
+
+HTML sayfasına resim eklemek için <img> komutu kullanılır. ) -->
+<!-- src=source alt: alternatif anlamına gelmektedir. -->
+
+<!-- <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_442,h_143/https://assets.ubuntu.com/v1/5d05e2fc-II-FF-download-mascots.svg"alt="keybord"> -->
+
+
+<img src="https://picsum.photos/200/300" alt="">
+<img src="https://picsum.photos/300/300" alt="">
+<img src="https://picsum.photos/100/100" alt="İnternetten alınmıştır" title="Lore picsum">
+
+<!-- "title" resim üzerine gelince resim üzerinde bilgi ekranı gelmesi için yazılmıştır. 
+
+"width" genişlik
+"height" YÜkseklik olarak kullanılmasını sağlar"
+"border" resmi çerçeve içine alır.
+"align" resmi hizalamak için kullanılır.
+
+-->
+
+<img  src="Resim.jpg" alt="lokalden alınmıştır">
+<img width=200 src="Resim.jpg" alt="lokalden alınmıştır">
+<img width=200 height=200 src="Resim.jpg" alt="lokalden alınmıştır">
+<img width=200 height=200 src="Resim.jpg" alt="lokalden alınmıştır" title="Sağ tarafa eklenmiştir" align="right">
+
+<!-- Görsele link eklemek için -->
+
+<a href="default.asp">
+    <img src="https://media.giphy.com/media/hp8svqfEfk7q4qPgfy/giphy.gif" alt="HTML Tutorial" style="width:420px;height:420px;">
+</a>
+
+<!-- map and area -->
+<!-- Görsellerinize hyperlink ataması durumunda görselin tüm alanı link alanı haline dönüşecektir. Görselin herhangi  bir yerine tıklanması durumunda görsel sizi tanımlanan bağlantıya götürecektir. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image Maps</h2>
+
+    <p>Click to computer, the phone, or the cup of coffee to got a new page an read more about the topic:</p>
+
+<img src="laptop.jpg" alt="laptop" usemap="#workmap" width="3000" height="3000">
+<map name="Workmap">
+    <area shape="rect" coords="0,10000000,0,10000000" href="" alt="computer"
+href="computer.htm">
+    <area shape="rect" coords="20,2500,250,2500" href="" alt="computer"
+href="phone.htm">
+    <area shape="circle" coords="34,44,270,350" href="" alt="computer"
+href="coffee.htm">
+</map>
+
+</body>
+</html>
+
+
+<!-- 
+onload Event'ini kullanmak -->
+
+<!-- bu olay görsel yğklenmesi  tamamladığında ekranda "resim yüklendi" şekinde alert verir.Javascript tarafından bastırılacaktır
+
+-->
+
+<html>
+    <body>
+        
+        <img src="Resim.jpg" onload="resimYuklendi()">
+
+        <script>function resimYuklendi(){
+            alert("resimYuklendi");}
+            
+        </script>
+    </body>
+
+</html>
+
+<!-- picture elementi İle Kullanım -->
+
+<!-- HTML5 İle gelen web sayfamızda responsive imageler kullanmamız konusunda büyük kolaylık sağlıyor. Bir tane img birden fazla source çekebilir.Picture tagi ekran boyutlarına göre birden çok source kullanmamızı sağlar. Bu sayede ekran boyutu değiştikçe farklı imageleri kullanabilirsiniz. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<picture>
+    <source srcset="https://image.freepik.com/free-photo/selective-focus-shot-brown-cat-posing-camera_181624-25909.jpg"media="(max-width: 600px)">
+    <source srcset="https://image.freepik.com/free-photo/selective-focus-shot-gray-cat-with-angry-cat-face_181624-13282.jpg"media="(max-width: 1000px)">
+    <img src="https://image.freepik.com/free-photo/white-cat-lies-woman-s-knees_8353-539.jpg" alt="Kedi" />
+</picture>
+
+</body>
+</html>
